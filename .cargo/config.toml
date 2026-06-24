@@ -1,8 +1,12 @@
 [target.xtensa-esp32-none-elf]
 runner = "espflash flash --monitor --chip esp32 --partition-table ./partitions.csv"
+linker = "xtensa-esp32-elf-gcc"
 
 [env]
 ESP_LOG="info"
+CC_xtensa_esp32_none_elf  = "xtensa-esp32-elf-gcc"
+AR_xtensa_esp32_none_elf  = "xtensa-esp32-elf-ar"
+CFLAGS_xtensa_esp32_none_elf = "-mlongcalls"
 
 [build]
 rustflags = [

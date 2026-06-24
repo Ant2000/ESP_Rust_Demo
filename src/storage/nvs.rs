@@ -3,7 +3,6 @@ use embassy_sync::mutex::Mutex;
 use embassy_sync::once_lock::OnceLock;
 use sequential_storage::cache::NoCache;
 use sequential_storage::map::{MapConfig, MapStorage};
-use serde::{de::DeserializeOwned, Serialize};
 use crate::storage::storage::SharedFlash;
 
 type Storage = MapStorage<u8, SharedFlash, NoCache>;

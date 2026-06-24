@@ -75,7 +75,9 @@ static_cell        = "2.1.1"
 sequential-storage = { version = "7.2.0"}
 embedded-storage   = "0.3.1"
 embedded-storage-async = "0.4.1"
-serde = {version = "1.0.228", default-features = false, features = ["derive"]}
+littlefs2 = "0.7.2"
+littlefs2-core = "0.1.2"
+heapless = "0.9.3"
 
 # For fine tuning these settings, please refer to https://doc.rust-lang.org/cargo/reference/profiles.html
 [profile.dev]
