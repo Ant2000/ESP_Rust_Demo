@@ -45,8 +45,7 @@ esp-println = { version = "0.17.0", features = ["esp32", "log-04"] }
 bt-hci = "0.8.0"
 embassy-executor = { version = "0.10.0", features = ["log"] }
 embassy-time = { version = "0.5.0", features = ["log"] }
-embassy-sync = {version = "0.8.0", features = ["log"]}
-embassy-embedded-hal = "0.6.0"
+embassy-sync = {version = "0.7"}
 esp-radio = { version = "0.18.0", features = [
   "ble",
   "coex",
@@ -78,6 +77,7 @@ embedded-storage-async = "0.4.1"
 littlefs2 = "0.7.2"
 littlefs2-core = "0.1.2"
 heapless = "0.9.3"
+embassy-futures = "0.1.2"
 
 # For fine tuning these settings, please refer to https://doc.rust-lang.org/cargo/reference/profiles.html
 [profile.dev]
